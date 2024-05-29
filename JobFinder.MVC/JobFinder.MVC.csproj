@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>JobFinderMVC</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Areas\Admin\Controllers\" />
+      <Folder Include="Areas\Admin\Data\" />
+      <Folder Include="Areas\Admin\Models\" />
+      <Folder Include="Areas\Admin\Views\" />
+      <Folder Include="Areas\User\Controllers\" />
+      <Folder Include="Areas\User\Data\" />
+      <Folder Include="Areas\User\Models\" />
+      <Folder Include="Areas\User\Views\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="wwwroot\Admin\.github\codeql\codeql-config.yml" />
+      <Content Include="wwwroot\Admin\.github\CONTRIBUTING.md" />
+      <Content Include="wwwroot\Admin\.github\dependabot.yml" />
+      <Content Include="wwwroot\Admin\.github\ISSUE_TEMPLATE\bug-report-for-adminlte-v3.1-x.md" />
+      <Content Include="wwwroot\Admin\.github\ISSUE_TEMPLATE\feature-request-for-adminlte-v4-x.md" />
+      <Content Include="wwwroot\Admin\.github\workflows\ci.yml" />
+      <Content Include="wwwroot\Admin\.github\workflows\codeql.yml" />
+      <Content Include="wwwroot\Admin\.github\workflows\docs.yml" />
+      <Content Include="wwwroot\Admin\.github\workflows\lint.yml" />
+      <Content Include="wwwroot\jobfinderport front\.DS_Store" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\JobFinder.Persistence\JobFinder.Persistence.csproj" />
+    </ItemGroup>
+
+</Project>
